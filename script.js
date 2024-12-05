@@ -41,7 +41,7 @@ function startGame() {
 
     if (timeLeft <= 0) {
       clearInterval(timer);
-      messageDisplay.textContent = `⏳ Time's up! The correct word was: ${currentWord} 😔`;
+      messageDisplay.textContent = `⏳ Time's up! The correct word was: ${currentWord} 😈👻`;
       setTimeout(startGame, 2500);
     }
   }, 1000);
@@ -53,11 +53,11 @@ submitBtn.addEventListener("click", () => {
   if (playerInput === currentWord) {
     score++;
     scoreDisplay.textContent = `Score: ${score}`;
-    messageDisplay.textContent = "🎉 Correct! Well done!";
+    messageDisplay.textContent = "🎉 Correct! Well done!👑";
     setTimeout(startGame, 1000);
     clearInterval(timer);
   } else {
-    messageDisplay.textContent = "❌ Incorrect, try again!";
+    messageDisplay.textContent = "❌ Incorrect, try again!🤪";
   }
 });
 
